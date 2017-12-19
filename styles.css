@@ -172,13 +172,31 @@ a img{
 
 .android-be-together-section {
   position: relative;
-  height: 500px;
+  height: 800px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('images/slide01.jpg') center 0% no-repeat;
+  background: url('images/slide01.jpg') center 30% no-repeat;
   background-size: cover;
 }
-
+.android-be-together-section-bg {
+  position: relative;
+  /*height: 200px;*/
+  width: auto;
+  background-color: #f3f3f3;
+  /*background: url('images/slide01.jpg') center 30% no-repeat;*/
+  background-size: cover;
+}
+.android-be-together-section-bg-image {
+  position: relative;
+  height: 300px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('images/slide01.jpg') center 60% no-repeat;
+  background-size: cover;
+}
+  .mdl-layout__drawer{
+    padding-top: 0px;
+  }
 .logo-font {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   line-height: 1;
@@ -188,12 +206,14 @@ a img{
 
 .android-slogan {
   font-size: 60px;
-  padding-top: 160px;
+  padding-top: 100px;
 }
 
 .android-sub-slogan {
   font-size: 21px;
   padding-top: 24px;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .android-sub-slogan-2 {
@@ -376,12 +396,25 @@ a img{
 
   .android-customized-section-text p {
     padding-top: 16px;
+    padding-bottom: 16px;
   }
 
 .android-customized-section-image {
   background: url('images/devices.jpg') center top no-repeat;
   background-size: cover;
   height: 400px;
+}
+
+.android-customized-section-image-marketing {
+  background: url('images/googlebridge.jpg') center top no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.android-customized-section-image-index {
+  background: url('images/slide01_new.jpg') center top no-repeat;
+  background-size: cover;
+  height: 325px;
 }
 
 .android-more-section {
@@ -468,10 +501,34 @@ a img{
 .android-link-menu:hover {
   cursor: pointer;
 }
+.mdl-layout__drawer .mdl-navigation{
+  padding-top: 0px;
+}
+.mdl-layout__header-row{
+  padding: 0 15px 0 80px;
+}
 
+
+/*@media (max-width: 400px){
+
+}*/
 
 /**** Mobile layout ****/
 @media (max-width: 900px) {
+
+
+  .mdl-mega-footer {
+    padding: 40px 15px 30px 15px;
+  }
+  .android-customized-section-image-index {
+    background: url('images/slide01_new.jpg') center top no-repeat;
+    background-size: cover;
+    height: 250px;
+  }
+
+  .android-be-together-section-bg {
+    height: 200px;
+  }
   .android-navigation-container {
     display: none;
   }
@@ -509,19 +566,22 @@ a img{
   }
 
   .android-be-together-section {
-    height: 350px;
+    height: 250px;
   }
 
   .android-slogan {
-    font-size: 26px;
+    font-size: 40px;
     margin: 0 16px;
-    padding-top: 24px;
+    padding-top: 40px;
   }
 
   .android-sub-slogan {
-    font-size: 16px;
+    font-size: 20px;
     margin: 0 16px;
-    padding-top: 8px;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    line-height: 25px;
   }
 
   .android-create-character {
